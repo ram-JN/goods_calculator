@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+	<title></title>
+	<style type="text/css">
+		/* Common */
+		body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+		body,input,textarea,select,button,table{font-size:14px;font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;line-height:1.25em}
+		body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+		ul,ol{list-style:none}
+		a{color:#000;text-decoration:none}
+		a:hover{background-color:#EBF2FC}
+		.u_vc{position:absolute;*left:-9999em;z-index:-1;font-size:4px;line-height:1px;color:transparent}
+		body{position:relative;padding:0 14px;background-color:#fff;color:#000;word-wrap:break-word;-webkit-text-size-adjust:none}
+		#ct{padding:0 0 30px 0}
+		header{padding:1em .1em .9em .1em;border-bottom:3px solid #222}
+		.hd_h1{font-size:1.2em}
+		h1{position:relative;padding:2em .1em .4em}
+		h1 span{position:absolute;right:0}
+		.sec_h{clear:both;padding:2em .1em .4em;border-bottom:1px solid #000;font-size:1em}
+		ul{font-size:.9em}
+		li{position:relative;border-bottom:1px solid #dfdfdf}
+		li a{display:block;padding:.7em 31px .6em .1em;background:url(data:image/gif;base64,R0lGODlhEQAJAIABAJWVlf///yH5BAEAAAEALAAAAAARAAkAAAITBIKpa7efGpxyvmoRztt272RJAQA7) no-repeat 100% 50%;_zoom:1}
+		li span{margin-left:.4em;font-size:.86em;color:#909090}
+		footer{clear:both;margin:2.5em 0 4em;padding:6px 2px 2px;background:#f4f4f4;font-size:.86em;line-height:1.6em;color:#333;text-align:center}
+		dt,dd{display:inline;color:#333}
+		dt:after{display:inline;content:': '}
+		dd:last-of-type{display:inline-block;color:#aaa}
+		.view_check{position:absolute;left:0;top:12px;}
+		.view_check + a{margin-left:20px}
+		.ft_a{display:inline-block;padding:2px 2px 5px;color:#16d;letter-spacing:-1px;text-decoration:underline}
+		#multi_select {display: none;}
+		#view_url {resize: none; width: 500px; max-width: 100%;}
+		.btn{padding:5px;background:none;border:1px solid #000;cursor: pointer;}
+	</style>
+	<!--[if lt IE 9]>
+	<script type="text/javascript">
+		document.createElement("section");
+		document.createElement("nav");
+		document.createElement("article");
+		document.createElement("aside");
+		document.createElement("hgroup");
+		document.createElement("header");
+		document.createElement("footer");
+	</script>
+	<![endif]-->
+	<script type="text/javascript">
+		var filelist_json = [{"groupName":"___default","groupList":[{"path":"goods_calculator.html","dir":".","basename":"goods_calculator.html","title":"굿즈 계산기"}]},{"groupName":"CSS","groupList":[{"path":"css/goods_calculator.css","dir":"css","basename":"goods_calculator.css","title":"goods_calculator.css"}]}];
+	</script>
+</head>
+<body>
+	<header role="banner">
+		<h1 class="hd_h1">M : 스포츠 마크업</h1>
+	</header>
+	<article id="ct">
+		<section class="qr_code">
+			<h2 class="sec_h">파일 리스트 페이지 URL - QR Code</h2>
+			<img id="_im1" style="width:150px;height:150px">
+			<script type="text/javascript">
+				document.getElementById("_im1").src = 'http://chart.apis.google.com/chart?cht=qr&chs=150x150&chl='+encodeURIComponent(location.href);
+			</script>
+		</section>
+		<section id="multi_select" class="multi_select">
+			<button type="button" class="btn" onclick="create_url()">URL 생성</button><br><br>
+			<textarea id="view_url" readonly="readonly"></textarea><br><br>
+			<label><input type="checkbox" onclick="check_all(this)"> 전체선택</label>
+		</section>
+		<section role="main">
+			<h1 class="u_vc">마크업</h1>
+			<div id="groupList"></div>
+			<div id="defaultList"></div>
+		</section>
+	</article>
+	<script type="text/javascript">
+		var fold = false;
+/* inject:filelist_json */
+Base64={_Rixits:"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/",fromNumber:function(a){if(isNaN(Number(a))||null===a||a===Number.POSITIVE_INFINITY)throw"The input is not valid";if(0>a)throw"Can't represent negative numbers now";for(var b=Math.floor(a),c="";a=b%64,c=this._Rixits.charAt(a)+c,b=Math.floor(b/64),0!=b;);return c},toNumber:function(a){var b=0;a=a.split("");for(var c=0;c<a.length;c++)b=64*b+this._Rixits.indexOf(a[c]);return b}};
+
+document.getElementById('view_url').addEventListener('click',function(){
+	this.select();
+});
+function get_view(json_data) {
+	var arrayString = "";
+	var baseString = false;
+	var query = window.location.search.substring(1);
+	var vars = query.split('&');
+	var dataLength = 0;
+	var tmpString = "";
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split('=');
+		if (decodeURIComponent(pair[0]) == 'view') {
+			baseString = decodeURIComponent(pair[1]);
+			break;
+		}
+	}
+	if(baseString) {
+		for(var i=0,imax=baseString.length;i<imax;i++) {
+			tmpString = Base64.toNumber(baseString[i]).toString(2);
+			for(var j=0,jmax=6-tmpString.length;j<jmax;j++) {
+				tmpString = "0"+tmpString;
+			}
+			arrayString += tmpString;
+		}
+		for(var i=0,imax=json_data.length;i<imax;i++) {
+			dataLength += json_data[i].groupList.length;
+		}
+		if(arrayString.length < dataLength) {
+			for(var i=0,imax=dataLength-arrayString.length;i<imax;i++) {
+				arrayString += "0";
+			}
+		} else {
+			arrayString = arrayString.substring(0,dataLength);
+		}
+	}
+	return arrayString;
+}
+function check_all(el) {
+	var checked = el.checked;
+	var checkboxes = el.parentNode.parentNode.parentNode.getElementsByClassName('view_check');
+	for(var i=0,imax=checkboxes.length;i<imax;i++) {
+		checkboxes[i].checked = checked;
+	}
+}
+function create_url() {
+	var checkboxes = document.getElementsByClassName('view_check');
+	var checkArray = [];
+	var arrayData = "";
+	var arrayString = "";
+	var imax = checkboxes.length+1;
+	for(var i=1;i<imax;i++) {
+		arrayString += checkboxes[i-1].checked ? "1" : "0";
+		if(i%6 == 0) {
+			arrayData += Base64.fromNumber(parseInt(arrayString,2));
+			arrayString = "";
+		}
+	}
+	if(arrayString.length > 0) {
+		var imax = 6 - arrayString.length;
+		for(var i=0;i<imax;i++) {
+			arrayString += "0";
+		}
+		arrayData += Base64.fromNumber(parseInt(arrayString,2));
+		arrayString = "";
+	}
+	arrayData = arrayData.replace(/0+$/,'');
+	document.getElementById('view_url').value = location.href+'?view='+arrayData;
+}
+function create_filelist(json_data) {
+	var arrayString = get_view(json_data);
+	if(!arrayString) {
+		document.getElementById('multi_select').style.display = "block";
+	}
+	var totalCount = 0;
+	for(var i=0,imax=json_data.length;i<imax;i++) {
+		var groupObj = json_data[i];
+		var list;
+		var div = document.createElement('div');
+		var title_h2 = document.createElement('h2');
+		var label = document.createElement('label');
+		var span = document.createElement('span');
+		var spanButton = document.createElement('span');
+		var file_num = 0;
+		var title_string = '';
+
+		var ul = document.createElement('ul');
+		for(var j=0,jmax=groupObj.groupList.length;j<jmax;j++) {
+			if(arrayString && arrayString[totalCount++] === "0") {
+				continue;
+			}
+			var li = document.createElement('li');
+			var data = groupObj.groupList[j];
+			var liString = '<a href="'+data.path+'">'+(data.title || 'No Title')+'<span>'+data.path+'</span></a>';
+			if(!arrayString) {
+				liString = '<input type="checkbox" class="view_check" name="view_check"> '+liString;
+			}
+			li.innerHTML = liString;
+			ul.appendChild(li);
+			file_num++;
+		}
+		if(ul.childElementCount > 0)
+		{
+			title_h2.classList.add('sec_h');
+			if(groupObj.groupName == '___default') {
+				list = document.getElementById('defaultList');
+				title_string = '파일 리스트 ('+file_num+'개)';
+			} else {
+				list = document.getElementById('groupList');
+				title_string = groupObj.groupName+' ('+file_num+'개)';
+			}
+
+			if(!arrayString) {
+				label.innerHTML = '<input type="checkbox" onclick="check_all(this)"> ';
+			}
+
+			if(span.innerText === "") {
+				span.innerText = title_string;
+			} else if(span.textContent === "") {
+				span.textContent = title_string;
+			}
+			if(fold) {
+				spanButton.innerHTML = ' <button type="button" class="btn fold_btn" onclick="fold_group(this)">접기</button>';
+			}
+			label.appendChild(span);
+			title_h2.appendChild(label);
+			title_h2.appendChild(spanButton);
+			div.appendChild(title_h2);
+			div.appendChild(ul);
+			list.appendChild(div);
+		}
+	}
+}
+function init_fold() {
+	if(fold) {
+		var span = document.createElement('span');
+		span.innerHTML = '<button type="button" class="btn" onclick="fold_all(true)">전체 접기</button> <button type="button" class="btn" onclick="fold_all(false)">전체 펼치기</button>';
+		document.getElementById('multi_select').appendChild(span);
+	}
+}
+function fold_group(el) {
+	var ul = el.parentNode.parentNode.parentNode.querySelector('ul');
+	if(el.classList.toggle('folded')) {
+		ul.style.display = 'none';
+		el.innerHTML = '펼치기';
+	} else {
+		ul.style.display = 'block';
+		el.innerHTML = '접기';
+	}
+}
+function fold_all(all) {
+	if(all) {
+		var foldButtons = document.querySelectorAll('.fold_btn:not(.folded)');
+	} else {
+		var foldButtons = document.querySelectorAll('.fold_btn.folded');
+	}
+	var imax = foldButtons.length;
+	for(var i=0;i<imax;i++) {
+		foldButtons[i].click();
+	}
+}
+init_fold();
+if(filelist_json) {
+	create_filelist(filelist_json);
+} else {
+	var filename = window.location.pathname.substring(window.location.pathname.lastIndexOf('/')+1,window.location.pathname.lastIndexOf('.'));
+	var req = new XMLHttpRequest();
+	req.open('GET', './'+filename+'.json', false);
+	req.onreadystatechange = function (aEvt) {
+		if (req.readyState == 4) {
+			if(req.status == 200) {
+				create_filelist(JSON.parse(req.responseText));
+			}
+		}
+	};
+	req.send(null);
+}
+		</script>
+</body>
+</html>
