@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi,viewport-fit=cover">
+	<title>굿즈 계산기</title>
+	<link rel="stylesheet" href="src/css/goods_calculator.css">
+</head>
+<body>
+<div id="container">
+<div class="wrap">
+	<div class="title_wrap">
+		<h1 class="title">아라시를 여행하는 전시회 굿즈 계산기</h1>
+		<div class="logo"><img src="src/img/logo.png" alt="arashi exhibition journey"></div>
+	</div>
+	<div class="goods_wrap">
+		<div class="goods_list_box">
+			<h2 class="title">Key Visual & Logo Design Collection</h2>
+			<p class="intro">키 비주얼을 모티브로 한 포스터나 클리어 파일, 로고를 모티브로 한 백이나 티셔츠 등 본 전시회 오리지날의 세계관을 표현한 상품.</p>
+			<ul class="goods_list">
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">A5 클리어 파일 (집합 1종 ・ 개인 5종)</span>
+							<span class="price">각 ￥400</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">집합 1종</span>
+								<span class="price">￥400</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_satoshi">오노 사토시</span>
+								<span class="price">￥400</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_sho">사쿠라이 쇼</span>
+								<span class="price">￥400</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_masaki">아이바 마사키</span>
+								<span class="price">￥400</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_kazunari">니노미야 카즈나리</span>
+								<span class="price">￥400</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_jun">마츠모토 준</span>
+								<span class="price">￥400</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">포스터 (집합)</span>
+							<span class="price">￥800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">자석 (로고 1종 ・ 개인 5종)</span>
+							<span class="price">각 ￥800</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">로고</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_satoshi">오노 사토시</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_sho">사쿠라이 쇼</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_masaki">아이바 마사키</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_kazunari">니노미야 카즈나리</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_jun">마츠모토 준</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">자석 (집합 1종)</span>
+							<span class="price">￥1,000</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">노트</span>
+							<span class="price">￥800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">로고 티셔츠 (여성용/남성용)</span>
+							<span class="price">각 ￥2,800</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">여성용</span>
+								<span class="price">￥2,800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">남성용</span>
+								<span class="price">￥2,800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">로고 티셔츠 (아동용)</span>
+							<span class="price">￥2,200</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">손수건</span>
+							<span class="price">￥800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">토트백</span>
+							<span class="price">￥1,800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">돈주머니 세트 (대 ・ 중 ・ 소)</span>
+							<span class="price">￥1,800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">뱃지 (2개 세트)</span>
+							<span class="price">￥1,600</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">머리끈 (2종)</span>
+							<span class="price">각 ￥600</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">스마트폰 악세사리</span>
+							<span class="price">￥1,800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">드링크 보틀 (2종)</span>
+							<span class="price">각 ￥2,500</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">초록</span>
+								<span class="price">￥2,500</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">분홍</span>
+								<span class="price">￥2,500</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">아크릴 스탠드 (2종 / 5명 세트)</span>
+							<span class="price">각 ￥2,200</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">여행 전 버전</span>
+								<span class="price">￥2,200</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">in Hawaii 버전</span>
+								<span class="price">￥2,200</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="goods_list_box">
+			<h2 class="title">Special Shooting in LA</h2>
+			<p class="intro">2019년 2월, 아라시 5명이 여행한 LA에서의 일을 담은 아트 카드 & 엽서</p>
+			<ul class="goods_list">
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">엽서 세트 (집한 1종 ・ 개인 5종 / 각 4매)</span>
+							<span class="price">각 ￥800</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">집합</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_satoshi">오노 사토시</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_sho">사쿠라이 쇼</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_masaki">아이바 마사키</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_kazunari">니노미야 카즈나리</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_jun">마츠모토 준</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">아트 카드 (집합 1종)</span>
+							<span class="price">￥500</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="goods_list_box">
+			<h2 class="title">Mickey Mouse</h2>
+			<p class="intro">본 전람회 한정으로 특별하게 그려진 미키 & 프렌즈들이 여러가지 상품에!</p>
+			<ul class="goods_list">
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">엽서 세트</span>
+							<span class="price">￥1,000</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">클리어 파일 (2종)</span>
+							<span class="price">각 ￥600</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">미키 & 프렌즈 버전</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">아라시가 그린 미키 버전</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">스탠드 포스트잇</span>
+							<span class="price">￥800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">미니 노트 2권 세트</span>
+							<span class="price">￥800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">다이 컷 메모지</span>
+							<span class="price">￥800</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">마스킹 테이프</span>
+							<span class="price">￥600</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">스티커 세트 (2종)</span>
+							<span class="price">각 ￥500</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">미키 & 프렌즈 버전</span>
+								<span class="price">￥500</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">아라시가 그린 미키 버전</span>
+								<span class="price">￥500</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">손수건</span>
+							<span class="price">￥1,000</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">미니 토트백</span>
+							<span class="price">￥2,000</span>
+						</button>
+						<select name="amount" disabled>
+							<option value="1">1개</option>
+							<option value="2">2개</option>
+						</select>
+					</div>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">아크릴 키 체인 (6종)</span>
+							<span class="price">각 ￥800</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">미키 & 프렌즈 버전</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_satoshi">오노 사토시 버전</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_sho">사쿠라이 쇼 버전</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_masaki">아이바 마사키 버전</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_kazunari">니노미야 카즈나리 버전</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name arashi_jun">마츠모토 준 버전</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+
+					</ul>
+				</li>
+				<li class="list">
+					<div class="goods_title">
+						<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+							<span class="name">스마트폰 케이스 (2종)</span>
+							<span class="price">각 ￥5,000</span>
+						</button>
+					</div>
+					<ul class="type_list">
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">L 사이즈</span>
+								<span class="price">￥5,000</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+						<li class="list">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">M 사이즈</span>
+								<span class="price">￥5,000</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="goods_list_box">
+			<h2 class="title">Special collaboration</h2>
+			<p class="intro">폭넓은 장르에서 주목을 받는 기예의 크리에이터(SHOGO SEKINE, Noritake, Daichi Miura) 가 "아라시" & "20주년 "을 주제로 작품을 그림. 본 전람회 한정의 아트 콜라보레이션이 탄생했습니다.</p>
+			<div class="category_box">
+				<h3 class="category">SHOGO SEKINE 콜라보레이션</h3>
+				<ul class="goods_list">
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">클리어 파일</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">마스킹 테이프</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">스티커 세트</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">티셔츠</span>
+								<span class="price">￥2,800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">지퍼백 (2종 세트)</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">파우치</span>
+								<span class="price">￥1,300</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">아크릴 키 체인</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">뱃지 (2종 세트)</span>
+								<span class="price">￥500</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">볼펜 (2종)</span>
+								<span class="price">각 ￥500</span>
+							</button>
+						</div>
+						<ul class="type_list">
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name">블랙</span>
+									<span class="price">￥500</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name">화이트</span>
+									<span class="price">￥500</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">접이식 거울</span>
+								<span class="price">￥1,000</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">비닐 우산</span>
+								<span class="price">￥2,000</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="category_box">
+				<h3 class="category">Noritake 콜라보레이션</h3>
+				<ul class="goods_list">
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">클리어 파일</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">마스킹 테이프</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">스티커 세트</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">티셔츠</span>
+								<span class="price">￥2,800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">지퍼백 (2종 세트)</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">파우치</span>
+								<span class="price">￥1,300</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">아크릴 키 체인</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">뱃지 (2종 세트)</span>
+								<span class="price">￥500</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">엽서 세트</span>
+								<span class="price">￥1,000</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">스탠드 포스트잇 세트</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">토트백</span>
+								<span class="price">￥2,000</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="category_box">
+				<h3 class="category">Daichi Miura 콜라보레이션</h3>
+				<ul class="goods_list">
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">클리어 파일</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">마스킹 테이프</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">스티커 세트</span>
+								<span class="price">￥600</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">티셔츠</span>
+								<span class="price">￥2,800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">지퍼백 (2종 세트)</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">파우치</span>
+								<span class="price">￥1,300</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">아크릴 키 체인</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">뱃지 (2종 세트)</span>
+								<span class="price">￥500</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">미니 노트 (2권 세트)</span>
+								<span class="price">￥800</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">접이식 거울</span>
+								<span class="price">￥1,000</span>
+							</button>
+							<select name="amount" disabled>
+								<option value="1">1개</option>
+								<option value="2">2개</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="goods_list_box">
+			<h2 class="title">Brand collaboration</h2>
+			<div class="category_box">
+				<h3 class="category">BE @ RBRICK</h3>
+				<p class="sub_intro">세계 각국에서 사랑 받는 메디 컴 · 토이 사 의 블록 타입 피겨 BE @ RBRICK 가 아라시와 협업. 멤버 컬러 5구의 라인 업.</p>
+				<ul class="goods_list">
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">A・RA・SHI 베어 브릭 (5종)</span>
+								<span class="price">각 ￥1,500</span>
+							</button>
+						</div>
+						<ul class="type_list">
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name arashi_satoshi">파랑 (오노 사토시)</span>
+									<span class="price">￥1,500</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name arashi_sho">빨강 (사쿠라이 쇼)</span>
+									<span class="price">￥1,500</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name arashi_masaki">초록 (아이바 마사키)</span>
+									<span class="price">￥1,500</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name arashi_kazunari">노랑 (니노미야 카즈나리)</span>
+									<span class="price">￥1,500</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name arashi_jun">보라 (마츠모토 준)</span>
+									<span class="price">￥1,500</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="category_box">
+				<h3 class="category">CRYSTAL COLLECTION</h3>
+				<p class="sub_intro">전 세계에 널리 알려진, 최고급의 빛을 자랑하는 스와로브스키 ® · 크리스탈이 아낌없이 박힌 아라시 마크의 키링.</p>
+				<ul class="goods_list">
+					<li class="list">
+						<div class="goods_title">
+							<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+								<span class="name">아라시 마크 키링 (2종)</span>
+								<span class="price">각 ￥12,000</span>
+							</button>
+						</div>
+						<ul class="type_list">
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name">금색</span>
+									<span class="price">￥12,000</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+							<li class="list">
+								<button class="btn_checkbox" type="button" role="checkbox" aria-checked="false">
+									<span class="name">은색</span>
+									<span class="price">￥12,000</span>
+								</button>
+								<select name="amount" disabled>
+									<option value="1">1개</option>
+									<option value="2">2개</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="calculation_wrap">
+		<p class="result">총 <em class="num">0</em>개 <strong class="all_price">0</strong>엔</p>
+	</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+
+	let select_num = 0;
+	let child_num = 0;
+
+    function checkbox () {
+
+        if($(this).attr('aria-checked') == 'true') {
+            $(this).attr('aria-checked', false);
+            $(this).siblings('select').attr('disabled', true);
+            select_num = select_num - 1;
+        } else {
+            $(this).attr('aria-checked', true);
+            $(this).siblings('select').attr('disabled', false);
+            select_num = select_num + 1;
+        }
+
+        $('.calculation_wrap .result .num').text(select_num);
+    }
+
+    $('.type_list .btn_checkbox').on('click', checkbox);
+
+    $('.goods_title .btn_checkbox').on('click', function () {
+
+        child_num = $(this).parent().siblings('.type_list').children().length;
+
+        if($(this).attr('aria-checked') == 'true') {
+            $(this).attr('aria-checked', false);
+            $(this).parent().siblings('.type_list').find('.btn_checkbox').attr('aria-checked', false).siblings('select').attr('disabled', true);
+
+            child_num > 0 ? select_num = select_num - child_num : select_num = select_num - 1;
+
+        } else {
+            $(this).attr('aria-checked', true);
+            $(this).parent().siblings('.type_list').find('.btn_checkbox').attr('aria-checked', true).siblings('select').attr('disabled', false);
+
+            child_num > 0 ? select_num = select_num + child_num : select_num = select_num + 1;
+
+        }
+
+        $('.calculation_wrap .result .num').text(select_num);
+    })
+
+</script>
+</html>
