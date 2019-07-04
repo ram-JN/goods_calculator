@@ -1,0 +1,28 @@
+// Sprites Map
+$sp_goods_calculator: (
+	name: 'sp_goods_calculator',
+	ratio: 2,
+	width: 76px,
+	height: 64px,
+	image: '../img/sprite/sp_goods_calculator.png',
+	sprites: (
+	btn_toggle_down: (
+			offset-x: 0px,
+			offset-y: -40px,
+			width: 46px,
+			height: 24px,
+		),
+		chkbox_off: (
+			offset-x: 0px,
+			offset-y: 0px,
+			width: 36px,
+			height: 36px,
+		),
+		chkbox_on: (
+			offset-x: -40px,
+			offset-y: 0px,
+			width: 36px,
+			height: 36px,
+		),
+	)
+);
