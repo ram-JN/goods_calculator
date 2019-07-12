@@ -32,12 +32,12 @@ body{font-family:Helvetica Neue,Apple SD Gothic Neo,'나눔고딕',"Nanum Gothic
 @media (max-width:320px) {
 	.goods_list_box .intro,.goods_list_box .sub_intro{font-size:12px}
 }
-.goods_list_box .goods_title{display:-webkit-box;display:-webkit-flex;display:flex}
+.goods_list_box .goods_title{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
 .goods_list_box .goods_title .btn_checkbox{padding:9px 10px;background-color:#eee}
 @media (max-width:320px) {
 	.goods_list_box .goods_title .btn_checkbox{padding:9px 5px}
 }
-.goods_list_box .btn_checkbox{-webkit-box-flex:1;-webkit-flex:1;flex:1;line-height:22px;-webkit-box-sizing:content-box;box-sizing:content-box;padding:5px 10px;text-align:left;font-size:14px;cursor:pointer}
+.goods_list_box .btn_checkbox{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;line-height:22px;-webkit-box-sizing:content-box;box-sizing:content-box;padding:5px 10px;text-align:left;font-size:14px;cursor:pointer}
 @media (max-width:320px) {
 	.goods_list_box .btn_checkbox{font-size:12px}
 }
@@ -63,7 +63,7 @@ body{font-family:Helvetica Neue,Apple SD Gothic Neo,'나눔고딕',"Nanum Gothic
 @media (max-width:320px) {
 	.goods_list_box .type_list{padding:5px 0 0 8px}
 }
-.goods_list_box .type_list .list{display:-webkit-box;display:-webkit-flex;display:flex;margin-bottom:8px;padding-bottom:5px;border-bottom:1px dashed #555}
+.goods_list_box .type_list .list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:8px;padding-bottom:5px;border-bottom:1px dashed #555}
 .category_box .category{padding:10px 0;font-size:15px}
 @media (max-width:320px) {
 	.category_box .category{font-size:14px}
